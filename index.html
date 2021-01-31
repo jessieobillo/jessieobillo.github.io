@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesie</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <h3 class="logo">{JLOJ}</h3>
+            </div>
+            <div>
+                <ul class="list">
+                    <li><a href="#home" class="list-home">home</a></li>
+                    <li><a href="#about" class="list-home">about</a></li>
+                    <li><a href="#gallery" class="list-home">gallery</a></li>
+                    <li><a href="#contact" class="list-home">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div>
+                <h1 class="home-jess">JESSIE L. OBILLO JR</h1>
+                <h2 class="home-info">- Information Technologist -</h2>
+            </div>
+        </section>
+        <section id="about">
+           <div class="about-pro">
+               
+                    <img src="profile1.jpg" alt="Profile" class="about-pro-img"><br>
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p>Leyte Normal University</p>
+                    <p>March 2018</p>
+                    <br>
+                    <a href="resume.pdf" target="_blank" class="resume">RESUME</a>
+              
+            </div>
+            <div class="about-skill">
+                <label for="" class="about-label"><h3>Website Development : <input type="range" name="" id="" min="0" max="100" value="70"/> 75% </h3>
+                    <p>(html5, css, javascript, php, mysql, github )</p>
+                </label> 
+                <label for="" class="about-label"><h3>Software And Hardware :<input type="range" name="" id="" min="0" max="100" value="75"/> 75% </h3> 
+                    <p>(Office 365, Photo & Video Editing, Cloud Computing, Basic Software and hardware TroubleShooting, Basic Computer Networking, CCTV Installation)</p>
+                </label> 
+                <label for=""class="about-label"><h3>Thinking Skills : <input type="range" name="" id="" min="0" max="100" value="90"/> 90% </h3>
+                    <p>(Problem Solving, Analytical Thinking, Leadership, Communication, Sport Enthusiast )</p>
+                </label> 
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="gallery-text">
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery-type">
+                <img src="profile1.jpg"  alt="pic1" class="personal">
+                <img src="image1.png" alt="pic2" class="personal" >
+                <img src="image2.png" alt="pic2" class="project" >
+                <img src="footerpic1.jpg" alt="pic2" class="project" >
+                <video src="video1.mp4" class="videos"width="200px" height="200px" controls poster="poster1.png"></video>
+                <video src="video1.mp4"  class="videos"width="200px" height="200px" controls poster="poster1.png"></video>
+            </div>
+            <div class="gallery-button">
+              <a href="#contact" class="button-talk">Let's Talk</a>
+             </div>
+        </section>
+        <section id="contact">
+            <div class="contact-info">
+                <div class="info-div">
+                    <img src="footerpic1.jpg" alt="ITPIC" class="info-div-img">
+                </div>
+                <div class="info-details">
+                    <h3 >Call me: </h3><hr><p class="info-details-list">09273106821</p>
+                    <h3>Email me: </h3><hr><p  class="info-details-list">jcobillojr@gmail.com</p>
+                    <h3>Facebook: </h3><hr><p  class="info-details-list">Facebook.com/jesus.obillo.5</p>
+                    <h3>Address: </h3><hr><p  class="info-details-list">Balangiga Eastern Samar</p>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="contact-footer">
+                <h3 class="footer-logo">{JLOJ}</h3>
+               
+                <h4 class="footer-footer">2021. All Right Reserved </h4>
+                
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration:none;
+    }
+    
+    .header{
+       
+        background-color:#358597;
+       
+        height: 10vh;
+        width:100vw;
+        display: flex;
+        position: fixed;
+    }
+    .nav{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+    }
+    .logo{
+        letter-spacing: 2px;
+        display: flex;
+        font-style: oblique;
+        margin-left: 40px;
+        font-size: 45px;
+        color:  white;
+    }
+    .list{
+        
+        display: flex; 
+    }
+    .list-home{
+        margin-right: 30px;
+        color:white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 4px 6px 4px 6px;
+        border-radius: 4px;
+        transition: .5s ease all;
+    }
+    .list-home:hover{
+       
+        background-color:rgb(73, 202, 245);
+       color: rgb(91, 106, 139);
+       
+       
+    }
+    #home {
+        background-color:#358597;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .home-jess{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 50px;
+        letter-spacing: 1px;
+        text-shadow: brown;
+    }
+    .home-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f4a896;
+        font-style: italic;
+        letter-spacing: 1px;
+    
+    }
+    
+    #about{
+       
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        border-bottom:1px solid lightblue;
+    }
+    .about-pro{
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+
+    }
+    .about-skill{
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+       
+    }
+    .about-pro-img{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+      
+        border: 1px solid #358597;
+    
+    }
+    .about-pro h3{
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+    .about-pro p{
+        color:#358597 ;
+        font-size: 20px;
+    }
+    .resume{
+        border: 1px solid grey;
+        width: 90px;
+        height: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;   
+        transition: .3s ease;
+        letter-spacing: 1px;
+        font-size: 12px;
+        background-color: lightgrey;
+       
+    }
+    .resume:hover{
+        background-color: #358597;
+        color: white;
+        border: 1px solid white;
+    }
+    .about-label{
+        margin-bottom: 40px;
+        padding: 4px 8px 4px 8px;
+      
+        border-radius: 10px;
+    }
+    .about-label h3{
+        font-size: 25px;
+        color: #358597;
+    }
+    #gallery{
+      
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom:.5px solid  #358597;
+    }
+    .gallery-text{
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery-text h2{
+        color:#358597;
+        letter-spacing: 1.5px;  
+        font-size: 30px;     
+    }
+    .button-talk{
+        padding: 6px 10px 6px 10px;
+       
+        color: #358597;
+        border-radius: 10px;
+        transition: .5s ease all;
+        border: 1px solid #358597;
+    }
+    .button-talk:hover{
+        background-color: #358597;
+        border: 1px solid white;
+        color:white;
+    }
+    .gallery-type {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 2px;
+        height: 60vh;  
+    }
+    
+    
+    .gallery-button{
+       height: 10vh;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+        border-radius: 5px;
+        border:.5px solid#358597;
+    }
+    #contact{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info{
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+       
+    }
+   
+    .info-div-img{
+        width: 366px;
+        height: 300px;
+        border-radius: 10px;
+        border: .5px solid  #358597;
+       
+    }
+    .info-details{
+        background-color: rgb(186, 199, 207);
+        padding: 20px 16px 20px 16px;
+        border-radius: 10px;
+        border-style:outset;
+    }
+    .info-details-list{
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1px;
+       
+    }
+    .contact-footer{
+        background-color: gray;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+    }
+    .footer-logo{
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin:20px 0 10px 0; 
+        font-style: oblique;
+        color:  rgb(186, 199, 207);
+    }
+    .footer-footer{
+        margin-top: 30px;
+    }
+    @media (max-width:850px){
+    .logo{
+        margin-left: 30px;
+        font-size: 30px;
+    }
+    .list{
+        font-size: 15px;
+    }
+    .home-jess{
+        font-size: 40px;
+    }
+    .about-pro-img{
+        height: 220px;
+        width: 220px;
+    }
+    .about-pro h3{ 
+        font-size: 15px;
+    }
+    .about-pro p{
+        color:#358597 ;
+        font-size: 15px;
+    }
+    .resume{
+        width: 80px;
+    }
+    .about-label{
+        margin-bottom: 30px;
+        padding: 2px 4px 2px 4px;
+    }
+    .about-label h3{
+        font-size: 20px;
+        
+    }
+    .gallery-text{
+        height: 30vh;
+    }
+    .gallery-text h2{
+        font-size: 25px;     
+    }
+    img, video{
+        height: 170px;
+        width: 170px;
+    }
+    .info-div-img{ 
+        width: 344px;
+        height: 290px;
+    }
+    .info-details-list{
+        font-size: 25px;
+    }
+    }
+    @media (max-width:700px){
+        
+    .logo{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .list{
+        font-size: 10px;
+    }
+    .home-jess{
+        font-size: 35px;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-pro{
+        height: 60vh;
+        width: 100vw;
+        justify-content: flex-end;
+    }
+    .about-pro-img{
+        height: 140px;
+        width: 140px;
+    }
+    .about-pro h3{
+        font-size: 18px; 
+    }
+    .about-pro p{
+        font-size: 17px;
+    }
+    .resume{ 
+        width: 70px;
+        height: 25px;
+        font-size: 11px;
+        margin-bottom: 40px;
+    }
+    .about-skill{
+        height: 40vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+      justify-content: flex-start;
+        align-items: center;
+    }
+    .about-label{
+        margin-bottom: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-label h3{
+        font-size: 15px;
+         display: flex;   
+       justify-content: center;
+    }
+    .about-label p{
+       font-size: 8px;
+    }
+    .gallery-text{
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .gallery-text h2{
+        color:#358597;
+        letter-spacing: 1.5px;  
+        font-size: 30px;     
+    }
+   
+    
+    .gallery-type {
+       
+        height: 65vh;  
+    }
+    .gallery-button{
+       height: 10vh;
+    }
+    img, video{
+        height: 150px;
+        width: 150px;
+    }
+    #contact{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info{
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-footer{
+        background-color: gray;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+    .footer-logo{
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin:20px 0 10px 0; 
+        font-style: oblique;
+        color:  rgb(186, 199, 207);
+    }
+    .footer-footer{
+        margin-top: 25px;
+    }
+    .info-div-img{
+        display: none;
+    }
+    .info-details{
+        background-color: rgb(186, 199, 207);
+        padding: 20px 16px 20px 16px;
+        border-radius: 10px;
+        border-style:outset;
+    }
+    .info-details-list{
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1px;
+       
+    }
+    }
+</style>
+</html>
